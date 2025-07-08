@@ -1,3 +1,7 @@
+<?php
+    include 'connect.php';
+    include 'register.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,33 +12,33 @@
 </head>
 <body>
     <h1>Welcome to MiniGame</h1>
-    <div class="container" id="SignUpContainer" style="display: none;">
+    <div class="container" id="SignUpContainer" style="display: block;">
         <div class="titleGroup">
             <h2>Create an account</h2>
             <p>Please fill out this form to sign up for this app</p>
         </div>
-        <div class="message">Veuillez remplir le form</div>
-        <form action="" method="post" class="formGroup">
+        <div class="message"><?php if(isset($message)){echo $message;}?></div>
+        <form action="index.php" method="post" class="formGroup">
             <div class="inputGroup">
                 <div class="inputField">
                     <label for="fName">First Name</label>
-                    <input type="text" id="fName" placeholder="First Name">
+                    <input type="text" id="fName" placeholder="First Name" name="firstName">
                 </div>
                 <div class="inputField">
                     <label for="lName">Last Name</label>
-                    <input type="text" id="lName" placeholder="Last Name">
+                    <input type="text" id="lName" placeholder="Last Name" name="lastName">
                 </div>
                 <div class="inputField">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Email">
+                    <input type="email" id="email" placeholder="Email" name="email">
                 </div>
                 <div class="inputField">
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Password">
+                    <input type="password" id="password" placeholder="Password" name="password">
                 </div>
             </div>
             <div class="submitButton">
-                <button>Sign Up</button>
+                <button name="signUp">Sign Up</button>
             </div>
         </form>
         <div class="links">
@@ -42,25 +46,25 @@
             <button id="signInButton">Sign In</button>
         </div>
     </div>
-    <div class="container" id="SignInContainer" style="display: block;">
+    <div class="container" id="SignInContainer" style="display: none;">
         <div class="titleGroup">
             <h2>Sign In</h2>
             <p>Please fill out this form to access your account</p>
         </div>
-        <div class="message"></div>
-        <form action="" method="post" class="formGroup">
+        <div class="message"><?php if(isset($message)){echo $message;}?></div>
+        <form action="index.php" method="post" class="formGroup">
             <div class="inputGroup">
                 <div class="inputField">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Email">
+                    <input type="email" id="email" placeholder="Email" name="email">
                 </div>
                 <div class="inputField">
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Password">
+                    <input type="password" id="password" placeholder="Password" name="password">
                 </div>
             </div>
             <div class="submitButton">
-                <button>Sign In</button>
+                <button name="signIn">Sign In</button>
             </div>
         </form>
         <div class="links">
