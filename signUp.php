@@ -8,18 +8,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>MiniGame Log-In</title>
+    <title>Sign Up for MiniGame!</title>
 </head>
 <body>
     <h1>Welcome to MiniGame</h1>
-    <div class="container" id="SignInContainer">
+    <div class="container" id="SignUpContainer">
         <div class="titleGroup">
-            <h2>Sign In</h2>
-            <p>Please fill out this form to access your account</p>
+            <h2>Create an account</h2>
+            <p>Please fill out this form to sign up for this app</p>
         </div>
         <div class="message"><?php if(isset($message)){echo $message;}?></div>
         <form action="" method="post" class="formGroup">
             <div class="inputGroup">
+                <div class="inputField">
+                    <label for="fName">First Name</label>
+                    <input type="text" id="fName" placeholder="First Name" name="firstName" required>
+                </div>
+                <div class="inputField">
+                    <label for="lName">Last Name</label>
+                    <input type="text" id="lName" placeholder="Last Name" name="lastName" required>
+                </div>
                 <div class="inputField">
                     <label for="email">Email</label>
                     <input type="email" id="email" placeholder="Email" name="email" required>
@@ -30,12 +38,12 @@
                 </div>
             </div>
             <div class="submitButton">
-                <button name="signIn">Sign In</button>
+                <button name="signUp">Sign Up</button>
             </div>
         </form>
         <div class="links">
-            <p>Dont't have an account yet?</p>
-            <a href="signUp.php">Sign Up</a>
+            <p>Already have an account?</p>
+            <a href="index.php">Sign In</a>
         </div>
     </div>
 </body>

@@ -115,22 +115,24 @@ body{
 .links{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .links p{
     user-select: none;
 }
 
-.links button{
+.links a{
     margin: 0 1em;
-    border: none;
+    text-decoration: none;
+    /*border: none;*/
     color: #08a3a0;
     background: transparent;
-    cursor: pointer;
+    /*cursor: pointer;*/
     font-weight: 500;
 }
 
-.links button:hover{
+.links a:hover{
     transition: 0.5s;
     color: #078280;
     text-decoration: underline;

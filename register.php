@@ -15,9 +15,9 @@
             }else{
                 $insert = mysqli_query($con, "INSERT INTO `minigame` VALUES (0, '$firstName', '$lastName', '$email', '$password')");
                 if($insert){
-                    //$message = "Account successfully created!";
                     //echo "Account successfully created!";
-                    header("Location: homepage.php");
+                    header("Location: index.php");
+                    $message = "Account successfully created! Please sign up!";
                 }
             }
         }else{
@@ -25,7 +25,6 @@
             //echo "Please fill out the entire form!";
         }
     }
-
     if(isset($_POST['signIn'])){
         $email = $_POST['email'];
         $password = $_POST['password'];
