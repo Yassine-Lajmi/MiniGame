@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
     <a href="logout.php">Log out</a>
     <p>Hello
         <div class="message"><?php if(isset($message)){echo $message;}?></div>

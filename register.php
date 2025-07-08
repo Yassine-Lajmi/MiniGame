@@ -30,16 +30,18 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
         $password = md5($password);
-
-        $check = mysqli_query($con, "SELECT * FROM `minigame` WHERE email = '$email' AND passw = '$password'");
-        if( mysqli_num_rows($check)>0){
-            session_start();
-            $row = mysqli_fetch_assoc($check);
-            $_SESSION['email'] = $row['email'];
-            header("Location: homepage.php");
-            exit();
+        if(!empty($email) && !empty($password)){
+            $check = mysqli_query($con, "SELECT * FROM `minigame` WHERE email = '$email' AND passw = '$password'");
+            if( mysqli_num_rows($check)>0){
+                session_start();
+                $row = mysqli_fetch_assoc($check);
+                $_SESSION['email'] = $row['email'];
+                header("Location: homepage.php");
+            }else{
+                $message = "NOt Found. Incorrect Email or Password!";
+            }
         }else{
-            $message = "Incorrect Email or Password!";
+            $message = "Please fill out the entire form!";
         }
     }
 

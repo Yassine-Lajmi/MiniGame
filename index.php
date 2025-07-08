@@ -12,29 +12,29 @@
 </head>
 <body>
     <h1>Welcome to MiniGame</h1>
-    <div class="container" id="SignUpContainer" style="display: block;">
+    <div class="container" id="SignUpContainer" style="display: none;">
         <div class="titleGroup">
             <h2>Create an account</h2>
             <p>Please fill out this form to sign up for this app</p>
         </div>
         <div class="message"><?php if(isset($message)){echo $message;}?></div>
-        <form action="index.php" method="post" class="formGroup">
+        <form action="" method="post" class="formGroup">
             <div class="inputGroup">
                 <div class="inputField">
                     <label for="fName">First Name</label>
-                    <input type="text" id="fName" placeholder="First Name" name="firstName">
+                    <input type="text" id="fName" placeholder="First Name" name="firstName" required>
                 </div>
                 <div class="inputField">
                     <label for="lName">Last Name</label>
-                    <input type="text" id="lName" placeholder="Last Name" name="lastName">
+                    <input type="text" id="lName" placeholder="Last Name" name="lastName" required>
                 </div>
                 <div class="inputField">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Email" name="email">
+                    <input type="email" id="email" placeholder="Email" name="email" required>
                 </div>
                 <div class="inputField">
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Password" name="password">
+                    <input type="password" id="password" placeholder="Password" name="password" required>
                 </div>
             </div>
             <div class="submitButton">
@@ -46,21 +46,21 @@
             <button id="signInButton">Sign In</button>
         </div>
     </div>
-    <div class="container" id="SignInContainer" style="display: none;">
+    <div class="container" id="SignInContainer" style="display: block;">
         <div class="titleGroup">
             <h2>Sign In</h2>
             <p>Please fill out this form to access your account</p>
         </div>
         <div class="message"><?php if(isset($message)){echo $message;}?></div>
-        <form action="index.php" method="post" class="formGroup">
+        <form action="" method="post" class="formGroup">
             <div class="inputGroup">
                 <div class="inputField">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Email" name="email">
+                    <input type="email" id="email" placeholder="Email" name="email" required>
                 </div>
                 <div class="inputField">
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Password" name="password">
+                    <input type="password" id="password" placeholder="Password" name="password" required>
                 </div>
             </div>
             <div class="submitButton">
