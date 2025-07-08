@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+h1{
+    position: fixed;
+    top: 0;
+    text-align: center;
+    color: #08a3a0;
+    background: linear-gradient(0deg, transparent, #08a3a0);
+    width: 100%;
+    padding: 20px 0;
+    user-select: none;
+}
+
+body{
+    background: linear-gradient(180deg, #72FAFF, #CEFDFF);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: #F7F7F7;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    width: 50%;
+}
+
+.container .titleGroup{
+    text-align: center;
+}
+
+.container .titleGroup h2{
+    color: #08a3a0;
+    user-select: none;
+}
+
+.container .titleGroup p{
+    user-select: none;
+}
+
+.message{
+    font-size: medium;
+    height: 1.2em;
+    color: rgb(255, 0, 166);
+    margin: 0.5em;
+    user-select: none;
+}
+
+.inputGroup{
+    margin: 10px;
+}
+
+.inputGroup input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #9a9a9a;
+    color: #9a9a9a;
+    padding-left: 1.5em;
+    font-size: 15px;
+    margin-right: 2em;
+}
+
+.inputGroup label{
+    font-size: 15px;
+}
+
+.inputGroup input:focus{
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid rgb(255, 0, 166);
+}
+
+.submitButton{
+    width: 100%;
+    text-align: center;
+}
+
+.submitButton button{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: #CEFDFF;
+    color: #08a3a0;
+    font-size: 15px;
+    padding: .25em;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/*.submitButton button:hover{
+    transition: 0.3s;
+    background: #72FAFF;
+    letter-spacing: 1.5px;
+    color: #08a3a0;
+    border: 1px solid #08a3a0;
+}*/
+
+.submitButton button:hover{
+    transition: 0.3s;
+    background: #5bcace;
+    letter-spacing: 1.5px;
+    color: #078280;
+    border: 1px solid #078280;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.links p{
+    user-select: none;
+}
+
+.links button{
+    margin: 0 1em;
+    border: none;
+    color: #08a3a0;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.links button:hover{
+    transition: 0.5s;
+    color: #078280;
+    text-decoration: underline;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
