@@ -146,3 +146,135 @@ body{
     font-weight: bold;
     user-select: none;
 }
+
+.homePageHead{
+    position: fixed;
+    top: 0;
+    background: #CEFDFF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.homePage .userInfo{
+    display: flex;
+    align-items: center;
+}
+
+.homePage .identity{
+    display: flex;
+    align-items: center;
+    margin: 20px 10px 20px 50px;
+}
+
+.homePage .identity img{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.homePage .identity h2{
+    color: #08a3a0;
+    text-transform: capitalize;
+    margin-left: 20px;
+    font-size: 40px;
+    user-select: none;
+}
+
+.homePage .userInfo .scoreBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F7F7F7;
+    border-radius: 20px;
+    width: 100px;
+}
+
+.homePage .userInfo .scoreBar .score{
+    margin-left: 20px;
+}
+
+.homePage .userInfo .scoreBar img{
+    height: 40px;
+    width: 40px;
+}
+
+.homePageHead a{
+    width: 100px;
+    border-radius: 20px;
+    background: #08a3a0;
+    color: #CEFDFF;
+    font-size: 15px;
+    text-decoration: none;
+    padding: .5em;
+    font-weight: 600;
+    margin: 0 50px 0 20px;
+    text-align: center;
+}
+
+.homePageHead a:hover{
+    transition: 0.3s;
+    background: #078280;
+    letter-spacing: 1.5px;
+    color: #5bcace;
+    border: 1px solid #5bcace;
+}
+
+.homePage .activities{
+    margin-top: 400px;
+    width: 80%;
+    background-color: #F7F7F7;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.homePage .activities thead th{
+    color: #078280;
+    font-size: 40px;
+    text-align: left;
+    border-bottom: 3px solid;
+}
+
+.homePage .activities .name{
+    width: 50%;
+}
+
+.homePage .activities .cost{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.homePage .activities .cost img{
+    height: 20px;
+    width: 20px;
+}
+
+.homePage .activities .Btn{
+    width: 20px;
+    text-align: right;
+}
+
+.homePage .activities .Btn a{
+    border-radius: 20px;
+    background: #08a3a0;
+    color: #CEFDFF;
+    font-size: 15px;
+    text-decoration: none;
+    padding: .5em;
+    font-weight: 600;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.homePage .activities .Btn a:hover{
+    transition: 0.3s;
+    background: #078280;
+    letter-spacing: 1.5px;
+    color: #5bcace;
+    border: 1px solid #5bcace;
+}

@@ -18,7 +18,7 @@
             if(mysqli_num_rows($checkEmail) > 0){
                 $message = "Email Address Already Exists";
             }else{
-                $insert = mysqli_query($con, "INSERT INTO `minigame` VALUES (0, '$firstName', '$lastName', '$email', '$password')");
+                $insert = mysqli_query($con, "INSERT INTO `minigame` VALUES (0, '$firstName', '$lastName', '$email', '$password', 10)");
                 if($insert){
                     loginUser($email);
                 }
@@ -43,14 +43,6 @@
             }
         }else{
             $message = "Please fill out the entire form!";
-        }
-    }
-
-    if(isset($_SESSION['email'])){
-        $email = $_SESSION['email'];
-        $query = mysqli_query($con, "SELECT * FROM `minigame` WHERE email = '$email'");                
-        while($row = mysqli_fetch_array($query)){
-        $message = $row['firstname'].' '.$row['lastname'];
         }
     }
 ?>
