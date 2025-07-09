@@ -1,9 +1,7 @@
 <?php
     session_start();
-    include 'connect.php';
     include 'register.php';
     if(!isset($_SESSION['email'])){
-        //$messageError = 'Sorry! You have to access through an account!<a href="index.php">Sign In</a>';
         header("Location: error.php");
     }
 ?>

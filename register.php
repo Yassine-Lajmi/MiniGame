@@ -17,17 +17,14 @@
             $checkEmail = mysqli_query($con,"SELECT * FROM `minigame` WHERE email = '$email'");
             if(mysqli_num_rows($checkEmail) > 0){
                 $message = "Email Address Already Exists";
-                //echo "Email Address Already Exists";
             }else{
                 $insert = mysqli_query($con, "INSERT INTO `minigame` VALUES (0, '$firstName', '$lastName', '$email', '$password')");
                 if($insert){
-                    //echo "Account successfully created!";
                     loginUser($email);
                 }
             }
         }else{
             $message = "Please fill out the entire form!";
-            //echo "Please fill out the entire form!";
         }
     }
 
