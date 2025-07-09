@@ -1,6 +1,12 @@
 <?php
     include 'connect.php';
 
+    function loginUser($email){
+        session_start();
+        $_SESSION['email'] = $email;
+        header("Location: homepage.php");
+    }
+
     if(isset($_POST['signUp'])){
         $firstName = $_POST['firstName'];
         $lastName = $_POST['lastName'];
@@ -16,8 +22,7 @@
                 $insert = mysqli_query($con, "INSERT INTO `minigame` VALUES (0, '$firstName', '$lastName', '$email', '$password')");
                 if($insert){
                     //echo "Account successfully created!";
-                    header("Location: index.php");
-                    $message = "Account successfully created! Please sign up!";
+                    loginUser($email);
                 }
             }
         }else{
@@ -25,6 +30,7 @@
             //echo "Please fill out the entire form!";
         }
     }
+
     if(isset($_POST['signIn'])){
         $email = $_POST['email'];
         $password = $_POST['password'];
@@ -32,12 +38,11 @@
         if(!empty($email) && !empty($password)){
             $check = mysqli_query($con, "SELECT * FROM `minigame` WHERE email = '$email' AND passw = '$password'");
             if( mysqli_num_rows($check)>0){
-                session_start();
                 $row = mysqli_fetch_assoc($check);
-                $_SESSION['email'] = $row['email'];
-                header("Location: homepage.php");
+                $userEmail = $row['email'];
+                loginUser ($userEmail);
             }else{
-                $message = "NOt Found. Incorrect Email or Password!";
+                $message = "Incorrect Email or Password!";
             }
         }else{
             $message = "Please fill out the entire form!";
