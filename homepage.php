@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MiniGame Home Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="homePage">
@@ -42,7 +42,7 @@
                     <p>Solve some questions to win coins!</p>
                 </td>
                 <td class="cost">Cost: 2<img src="profilePics/coin.png" alt="MiniCoin" height="20px" width="20px"></td>
-                <td class="Btn"><a href="MiniQuiz.php">Play</a></td>
+                <td class="Btn"><a href="MiniQuiz/MiniQuiz.php">Play</a></td>
             </tr>
             <tr>
                 <td class="name">
@@ -50,7 +50,7 @@
                     <p>Solve some questions to win coins!</p>
                 </td>
                 <td class="cost">Cost: 2<img src="profilePics/coin.png" alt="MiniCoin" height="20px" width="20px"></td>
-                <td class="Btn"><a href="MiniQuiz.php">Play</a></td>
+                <td class="Btn"><a href="MiniQuiz/MiniQuiz.php">Play</a></td>
             </tr>
         </tbody>
     </table>
