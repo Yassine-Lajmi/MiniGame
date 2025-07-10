@@ -3,7 +3,7 @@
 
     header('Content-Type: application/json');
 
-    $questionsGet = mysqli_query($con, "SELECT * FROM `miniquizquestions`");
+    $questionsGet = mysqli_query($con, "SELECT * FROM `miniquizquestions` ORDER BY RAND() LIMIT 4");
     $questions = [];
 
     while($q = mysqli_fetch_assoc($questionsGet)){

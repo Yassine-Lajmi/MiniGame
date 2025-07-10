@@ -22,7 +22,7 @@
                 <h2><?php if(isset($identity)){echo $identity;}?></h2>
             </div>
             <div class="scoreBar">
-                <div class="score">
+                <div class="score" id="score">
                     <?php if(isset($score)){echo $score;} ?>
                 </div>
                 <img src="profilePics/coin.png" alt="MiniCoin">
@@ -50,9 +50,13 @@
                     <p>Solve some questions to win coins!</p>
                 </td>
                 <td class="cost">Cost: 2<img src="profilePics/coin.png" alt="MiniCoin" height="20px" width="20px"></td>
-                <td class="Btn"><a href="MiniQuiz/MiniQuiz.php">Play</a></td>
+                <td class="Btn">
+                    <form action="" method="get"><button name="MiniQuizPlayButton">Play</button></form>
+                    <?php if(isset($message)){echo $message;} ?>
+                </td>
             </tr>
         </tbody>
     </table>
+    <!--script src="hpscript.js"></script>-->
 </body>
 </html>
