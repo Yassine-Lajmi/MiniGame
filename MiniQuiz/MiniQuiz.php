@@ -1,26 +1,3 @@
-<?php
-    //include 'MiniQuizBE.php';
-    /*include '../connect.php';
-
-    $questionsGet = mysqli_query($con, "SELECT * FROM `miniquizquestions`");
-    $questions = [];
-
-    while($q = mysqli_fetch_assoc($questionsGet)){
-        $q_id = $q['questionid'];
-        $answersGet = mysqli_query($con, "SELECT * FROM `miniquizanswers` WHERE questid = $q_id");
-
-        $answers = [];
-        while($a = mysqli_fetch_assoc($answersGet)){
-            $answers[] = $a;
-        }
-
-        $q['answers'] = $answers;
-        $questions[] = $q;
-    }
-
-    echo json_encode($questions);*/
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +17,7 @@
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
-            <button id="nextButton">Next</button>
+            <button id="nextButton" class="nextBtn">Next</button>
         </div>
         <form style="display: none;" id="scoreForm" action="../homepage.php" method="post">
             <input type="hidden" name="score" id="scoreInput">

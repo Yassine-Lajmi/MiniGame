@@ -147,6 +147,10 @@ body{
     user-select: none;
 }
 
+.homePage{
+    display: block;
+}
+
 .homePageHead{
     position: fixed;
     top: 0;
@@ -224,7 +228,7 @@ body{
 }
 
 .homePage .activities{
-    margin-top: 400px;
+    margin: 150px auto 0;
     width: 80%;
     background-color: #F7F7F7;
     padding: 20px;
@@ -254,11 +258,6 @@ body{
     width: 20px;
 }
 
-.homePage .activities .Btn{
-    width: 20px;
-    text-align: right;
-}
-
 .homePage .activities .Btn a{
     border-radius: 20px;
     background: #08a3a0;
@@ -272,6 +271,31 @@ body{
 }
 
 .homePage .activities .Btn a:hover{
+    transition: 0.3s;
+    background: #078280;
+    letter-spacing: 1.5px;
+    color: #5bcace;
+    border: 1px solid #5bcace;
+}
+
+.homePage .activities .Btn{
+    width: 20px;
+    text-align: right;
+}
+
+.homePage .activities .Btn button{
+    border: none;
+    border-radius: 20px;
+    background: #08a3a0;
+    color: #CEFDFF;
+    font-size: 15px;
+    padding: .5em;
+    font-weight: 600;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.homePage .activities .Btn button:hover{
     transition: 0.3s;
     background: #078280;
     letter-spacing: 1.5px;

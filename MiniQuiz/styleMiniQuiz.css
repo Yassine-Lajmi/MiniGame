@@ -1,11 +1,82 @@
-.btn:hover{
-    background: blue;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body{
+    background: linear-gradient(180deg, #faff72, #fcffa4);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app{
+    background: #F7F7F7;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 600px;
+}
+
+.app h1{
+    color: #7c8300;
+    border-bottom: 3px solid #7c8300;
+    padding-bottom: 20px;
+}
+
+.quizContainer{
+    display: flex;
+}
+
+.btn{
+    background: #e6e6e6;
+    width: 100%;
+    color: #222;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]){
+    background: #b0b0b0;
+    transition: 0.3s;
+}
+
+.btn:disabled{
+    cursor: no-drop;
 }
 
 .correct{
-    background: green;
+    background: rgb(186, 255, 137);
 }
 
 .incorrect{
-    background: red;
+    background: rgb(255, 150, 150);
+}
+
+.nextBtn, form button{
+    background: #fcffa4;
+    color: #7c8300;
+    font-weight: 500;
+    width: auto;
+    border: 1px solid #7c8300;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nextBtn:hover, form button:hover{
+    background: #faff72;
+    letter-spacing: 1px;
+    color: #5b6000;
+    border: 1px solid #5b6000;
+    transition: 0.3s;
 }

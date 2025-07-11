@@ -1,9 +1,6 @@
 <?php
     session_start();
     include 'hpbackend.php';
-    if(!isset($_SESSION['email'])){
-        header("Location: error.php");
-    }
 ?>
 
 <!DOCTYPE html>
@@ -18,14 +15,14 @@
     <header class="homePageHead">
         <div class="userInfo">
             <div class="identity">
-                <img src="profilePics/smallishbeans.jpg" alt="Profile Picture">
+                <img src="Pics/profile.jpg" alt="Profile Picture">
                 <h2><?php if(isset($identity)){echo $identity;}?></h2>
             </div>
             <div class="scoreBar">
                 <div class="score" id="score">
                     <?php if(isset($score)){echo $score;} ?>
                 </div>
-                <img src="profilePics/coin.png" alt="MiniCoin">
+                <img src="Pics/coin.png" alt="MiniCoin">
             </div>
         </div>
         <h1>MiniGame</h1>
@@ -38,10 +35,10 @@
         <tbody>
             <tr>
                 <td class="name">
-                    <h3>MiniQuiz</h3>
+                    <h3>MiniQuiz(Cheat)</h3>
                     <p>Solve some questions to win coins!</p>
                 </td>
-                <td class="cost">Cost: 2<img src="profilePics/coin.png" alt="MiniCoin" height="20px" width="20px"></td>
+                <td class="cost">Cost: 2<img src="Pics/coin.png" alt="MiniCoin" height="20px" width="20px"></td>
                 <td class="Btn"><a href="MiniQuiz/MiniQuiz.php">Play</a></td>
             </tr>
             <tr>
@@ -49,14 +46,13 @@
                     <h3>MiniQuiz</h3>
                     <p>Solve some questions to win coins!</p>
                 </td>
-                <td class="cost">Cost: 2<img src="profilePics/coin.png" alt="MiniCoin" height="20px" width="20px"></td>
+                <td class="cost">Cost: 2<img src="Pics/coin.png" alt="MiniCoin" height="20px" width="20px"></td>
                 <td class="Btn">
-                    <form action="" method="get"><button name="MiniQuizPlayButton">Play</button></form>
-                    <?php if(isset($message)){echo $message;} ?>
+                    <button id="MiniQuizPlayButton">Play</button>
                 </td>
             </tr>
         </tbody>
     </table>
-    <!--script src="hpscript.js"></script>-->
+    <script src="script.js"></script>
 </body>
 </html>
