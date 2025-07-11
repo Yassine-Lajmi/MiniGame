@@ -18,7 +18,7 @@
             if(mysqli_num_rows($checkEmail) > 0){
                 $message = "Email Address Already Exists";
             }else{
-                $insert = mysqli_query($con, "INSERT INTO `minigame` VALUES (0, '$firstName', '$lastName', '$email', '$password', 10)");
+                $insert = mysqli_query($con, "INSERT INTO `minigame` VALUES (0, '$firstName', '$lastName', '$email', '$password', 10, 10)");
                 if($insert){
                     loginUser($email);
                 }

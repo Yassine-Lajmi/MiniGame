@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+h1{
+    position: fixed;
+    top: 0;
+    text-align: center;
+    color: #1d9242;
+    background: linear-gradient(0deg, transparent, #1d9242);
+    width: 100%;
+    padding: 20px 0;
+    user-select: none;
+}
+
+.MSHead{
+    position: fixed;
+    top: 0;
+    background: rgb(196, 254, 154);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+/*img{
+    height: 70px;
+    width: 70px;
+}*/
+
+.MSHead .userInfo{
+    display: flex;
+    align-items: center;
+}
+
+.MSHead .identity{
+    display: flex;
+    align-items: center;
+    margin: 20px 10px 20px 50px;
+}
+
+.MSHead .identity img{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.MSHead .identity h2{
+    color: #1d9242;
+    text-transform: capitalize;
+    margin-left: 20px;
+    font-size: 40px;
+    user-select: none;
+}
+
+.MSHead .userInfo .scoreBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F7F7F7;
+    border-radius: 20px;
+    width: 100px;
+}
+
+.MSHead .userInfo .scoreBar .score{
+    margin-left: 20px;
+}
+
+.MSHead .userInfo .scoreBar img{
+    height: 40px;
+    width: 40px;
+}
+
+button{
+    border: none;
+    width: 100px;
+    border-radius: 20px;
+    background: #1d9242;
+    color: rgb(196, 254, 154);
+    font-size: 15px;
+    /*text-decoration: none;*/
+    padding: .5em;
+    font-weight: 600;
+    margin: 0 50px 0 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 0.3s;
+    background: #14602c;
+    letter-spacing: 1.5px;
+    color: rgb(147, 191, 117);
+    border: 1px solid rgb(147, 191, 117);
+}
+
+.MSHead a{
+    border: none;
+    width: 100px;
+    border-radius: 20px;
+    background: #1d9242;
+    color: rgb(196, 254, 154);
+    font-size: 15px;
+    text-decoration: none;
+    padding: .5em;
+    font-weight: 600;
+    margin: 0 50px 0 20px;
+    text-align: center;
+    /*cursor: pointer;*/
+}
+
+.MSHead a:hover{
+    transition: 0.3s;
+    background: #14602c;
+    letter-spacing: 1.5px;
+    color: rgb(147, 191, 117);
+    border: 1px solid rgb(147, 191, 117);
+}
+
+body{
+    padding-top: 200px;
+    background: linear-gradient(180deg, rgb(163, 255, 97), rgb(196, 254, 154));
+    height: 100vh;
+}
+
+.category{
+    margin: 15px;
+}
+
+.category .title{
+    background: #f7f7f7;
+    color: #1d9242;
+    padding: .5em 1em;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /*position: relative;*/
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.category .cookieBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e1e1e1;
+    border-radius: 20px;
+    width: 100px;
+    /*position: absolute;
+    right: 5px;
+    top: 5px;*/
+    padding: 5px;
+}
+
+.category .cookieBar .cookies{
+    margin-left: 20px;
+    color: #000;
+}
+
+.category .cookieBar img{
+    height: 30px;
+    width: 30px;
+}
+
+.itemsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.item{
+    background: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.item .itemImg{
+    height: auto;
+    width: 100%;
+}
+
+.item .cost, .item .effect{
+    font-size: 20px;
+}
+
+.item .cost img, .item .effect img{
+    height: 20px;
+    width: 20px;
+}

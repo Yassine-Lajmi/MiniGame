@@ -51,6 +51,16 @@
                     <button id="MiniQuizPlayButton">Play</button>
                 </td>
             </tr>
+            <tr>
+                <td class="name">
+                    <h3>MiniShop</h3>
+                    <p>Buy items and accessories!</p>
+                </td>
+                <td class="cost"></td>
+                <td class="Btn">
+                    <a href="MiniShop/MSindex.php">Play</a>
+                </td>
+            </tr>
         </tbody>
     </table>
     <script src="script.js"></script>
