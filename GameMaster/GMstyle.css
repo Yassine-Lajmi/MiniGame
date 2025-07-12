@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+h1{
+    position: fixed;
+    top: 0;
+    text-align: center;
+    color: #08a3a0;
+    background: linear-gradient(0deg, transparent, #08a3a0);
+    width: 100%;
+    padding: 20px 0;
+    user-select: none;
+}
+
+body{
+    background: linear-gradient(180deg, #72FAFF, #CEFDFF);
+    height: 100vh;
+    display: Block;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background: #CEFDFF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.identity{
+    display: flex;
+    align-items: center;
+    margin: 20px 10px 20px 50px;
+}
+
+.identity img{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.identity h2{
+    color: #08a3a0;
+    text-transform: capitalize;
+    margin-left: 20px;
+    font-size: 40px;
+    user-select: none;
+}
+
+header a{
+    width: 100px;
+    border-radius: 20px;
+    background: #08a3a0;
+    color: #CEFDFF;
+    font-size: 15px;
+    text-decoration: none;
+    padding: .5em;
+    font-weight: 600;
+    margin: 0 50px 0 20px;
+    text-align: center;
+}
+
+header a:hover{
+    transition: 0.3s;
+    background: #078280;
+    letter-spacing: 1.5px;
+    color: #5bcace;
+    border: 1px solid #5bcace;
+}
+
+.activities{
+    margin: 220px 20px 0;
+}
+
+.activities .title{
+    background: #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+    color: #08a3a0;
+    font-weight: bold;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+}
+
+.activity{
+    background: #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.activity img{
+    height: 70px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.activity:hover{
+    background: #c5c4c4;
+}

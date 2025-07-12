@@ -6,7 +6,7 @@
 
     if(isset($_SESSION['email'])){
         $email = $_SESSION['email'];
-        $query = mysqli_query($con, "SELECT * FROM `minigame` WHERE email = '$email'");                
+        $query = mysqli_query($con, "SELECT * FROM `users` WHERE email = '$email'");                
         while($row = mysqli_fetch_array($query)){
         $score = $row['score'];
         echo json_encode($score);

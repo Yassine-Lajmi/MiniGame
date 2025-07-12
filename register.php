@@ -14,11 +14,11 @@
         $password = $_POST['password'];
         if(!empty($firstName) && !empty($lastName) && !empty($email) && !empty($password)){
             $password = md5($password);
-            $checkEmail = mysqli_query($con,"SELECT * FROM `minigame` WHERE email = '$email'");
+            $checkEmail = mysqli_query($con,"SELECT * FROM `users` WHERE email = '$email'");
             if(mysqli_num_rows($checkEmail) > 0){
                 $message = "Email Address Already Exists";
             }else{
-                $insert = mysqli_query($con, "INSERT INTO `minigame` VALUES (0, '$firstName', '$lastName', '$email', '$password', 10, 10)");
+                $insert = mysqli_query($con, "INSERT INTO `users` VALUES (0, '$firstName', '$lastName', '$email', '$password', 10, 10)");
                 if($insert){
                     loginUser($email);
                 }
@@ -33,7 +33,7 @@
         $password = $_POST['password'];
         $password = md5($password);
         if(!empty($email) && !empty($password)){
-            $check = mysqli_query($con, "SELECT * FROM `minigame` WHERE email = '$email' AND passw = '$password'");
+            $check = mysqli_query($con, "SELECT * FROM `users` WHERE email = '$email' AND passw = '$password'");
             if( mysqli_num_rows($check)>0){
                 $row = mysqli_fetch_assoc($check);
                 $userEmail = $row['email'];
