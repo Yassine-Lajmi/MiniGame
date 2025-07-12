@@ -5,12 +5,14 @@
     if(isset($_SESSION['email'])){
         $email = $_SESSION['email'];
         $query = mysqli_query($con, "SELECT * FROM `minigame` WHERE email = '$email'");                
-        while($row = mysqli_fetch_array($query)){
-        $identity = $row['firstname'].' '.$row['lastname'];
-        $score = $row['score'];
-        $cookies = $row['cookies'];
+        if(mysqli_num_rows($query) > 0){
+            $row = mysqli_fetch_assoc($query);
+            header('Content-Type: application/json');
+            echo json_encode($row);
+        }else{
+            echo json_encode(["error" => "User not found in database"]);
         }
     }else{
-        header("Location: error.php");
+        header("Location: ../error.php");
     }
 ?>
