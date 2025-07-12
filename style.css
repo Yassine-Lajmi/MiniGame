@@ -113,7 +113,7 @@ body{
     user-select: none;
 }
 
-.links a, .errorPage a{
+.links a, .errorPage a, .GameMasterLink{
     margin: 0 1em;
     text-decoration: none;
     color: #08a3a0;
@@ -126,6 +126,14 @@ body{
     color: #078280;
     text-decoration: underline;
     letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+.GameMasterLink:hover{
+    transition: 0.5s;
+    color: #078280;
+    text-decoration: underline;
+    letter-spacing: 1px;
     font-weight: 600;
 }
 

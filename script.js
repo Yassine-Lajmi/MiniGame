@@ -10,5 +10,5 @@ MQPlayButton.addEventListener("click", function(){
                 alert("You don't have enough coins!");
             }
         })
-})    
-.catch(error => console.error("Error:",error));
+        .catch(error => console.error("Error:",error));
+})
