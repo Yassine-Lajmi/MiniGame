@@ -19,26 +19,29 @@
     </header>
     <div class="activities">
         <div class="title"><h2>Activities</h2></div>
-        <div class="activity">
-            <img src="Pics/MiniShop-icon.jpg" alt="MiniShop Icon" height="40px" width="40px">
+        <div class="activity" id="minishop" role="button" tabindex="0">
+            <img src="Pics/MiniShop-icon.jpg" alt="MiniShop Icon" class="icon">
             <div class="text">
                 <h2>MiniShop</h2>
                 <p>Add, edit or delete food from MiniShop.</p>
             </div>
+            <a href="MiniShopEdit/index.php"><img src="Pics/nextBtn.png" alt="Go to MiniShop Edit Section"></a>
         </div>
-        <div class="activity">
-            <img src="Pics/profile-icon.png" alt="Profile Icon" height="40px" width="40px">
+        <div class="activity" id="profile" role="button" tabindex="0">
+            <img src="Pics/profile-icon.png" alt="Profile Icon" class="icon">
             <div class="text">
                 <h2>Profile</h2>
                 <p>Add or delete profile pictures for users to have.</p>
             </div>
+            <a href="ProfileEdit/index.php"><img src="Pics/nextBtn.png" alt="Go to Profile Edit Section"></a>
         </div>
-        <div class="activity">
-            <img src="Pics/MiniQuiz-icon.jpg" alt="MiniQuiz Icon" height="40px" width="40px">
+        <div class="activity" id="miniquiz" role="button" tabindex="0">
+            <img src="Pics/MiniQuiz-icon.jpg" alt="MiniQuiz Icon" class="icon">
             <div class="text">
                 <h2>MiniQuiz</h2>
                 <p>Add, edit or delete MiniQuiz questions and their answers.</p>
             </div>
+            <a href="MiniQuizEdit/index.php"><img src="Pics/nextBtn.png" alt="Go to MiniQuiz Edit Section"></a>
         </div>
     </div>
 </body>

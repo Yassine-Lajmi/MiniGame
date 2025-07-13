@@ -98,13 +98,23 @@ header a:hover{
     display: flex;
 }
 
-.activity img{
+.activity .icon{
     height: 70px;
     width: auto;
     margin-right: 10px;
     border-radius: 50%;
 }
 
-.activity:hover{
-    background: #c5c4c4;
+.activity a img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.activity a img:hover{
+    border: 1px solid #0c005b;
+    /*height: 60px;
+    width: 60px;*/
+    transition: 0.3s;
 }

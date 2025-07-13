@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+header h1{
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    user-select: none;
+    color: #1d9242;
+    background: linear-gradient(0deg, transparent, #1d9242);
+}
+
+body{
+    padding-top: 100px;
+    background: linear-gradient(180deg, rgb(163, 255, 97), rgb(196, 254, 154));
+    height: 100vh;
+}
+
+.body{
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.body .head{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.body .head h2{
+    color: #1d9242;
+    font-size: 30px;
+}
+
+.addForm{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.addForm label{
+    color: #1d9242;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.addForm > input{
+    padding: 0.25em 0.5em;
+    border: 1px solid #000;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.addForm .inputBox{
+    /*padding: 0 0.5em;
+    border: 1px solid #000;
+    /*font-size: 15px;
+    border-radius: 5px;
+    outline: none;*/
+    position: relative;
+    display: flex;
+}
+
+.addForm .inputBox input{
+    padding: 0.25em 0.5em;
+    border: 1px solid #000;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+
+.addForm .inputBox img{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.addForm .action{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.addForm .action button{
+    color: #f7f7f7;
+    width: 100px;
+    padding: 0.5em 0;
+    background: rgb(113, 222, 113);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.addForm .action a{
+    color: #f7f7f7;
+    width: 100px;
+    padding: 0.5em 0;
+    background: rgb(211, 153, 153);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    /*cursor: pointer;*/
+}
+
+.addForm .action button:hover, form .action a:hover{
+    letter-spacing: 1px;
+    border: 1px solid #1d9242;
+    color: #1d9242;
+    transition: 0.3s;
+}
+
+.itemsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.item{
+    background: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.item .itemImg{
+    height: auto;
+    width: 100%;
+}
+
+.item .cost, .item .effect{
+    font-size: 20px;
+}
+
+.item .cost img, .item .effect img{
+    height: 20px;
+    width: 20px;
+}
+
+.item .action{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.item .action button{
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

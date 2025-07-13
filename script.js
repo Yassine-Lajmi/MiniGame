@@ -5,7 +5,7 @@ MQPlayButton.addEventListener("click", function(){
         .then(response => response.json())
         .then(score =>{
             if(score >= 2){
-                window.location.href = "MiniQuiz/MiniQuiz.php"
+                window.location.href = "MiniQuiz/MiniQuiz.php";
             }else{
                 alert("You don't have enough coins!");
             }
