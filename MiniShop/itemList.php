@@ -42,12 +42,14 @@
         }
     }
 
+    $list = "";
     $get = mysqli_query($con, "SELECT * FROM `food`");
     if(mysqli_num_rows($get) == 0){
-        echo '<div class="message">No Items yet</div>';
+        //echo '<div class="message">No Items yet</div>';
+        $message = "No Items yet!";
     }else{
         while($row = mysqli_fetch_assoc($get)){
-            echo '
+            $list = $list . '
             <div class="item">
                 <img class="itemImg" src="foodPics/'.$row['foodpic'].'" alt="itemPic">
                 <h3 class="itemName">'.$row['foodname'].'</h3>

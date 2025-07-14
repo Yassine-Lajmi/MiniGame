@@ -1,7 +1,4 @@
-<?php
-    session_start();
-    include 'hpbackend.php';
-?>
+<?php include 'hpbackend.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,12 +13,10 @@
         <div class="userInfo">
             <div class="identity">
                 <img src="Pics/profile.jpg" alt="Profile Picture">
-                <h2><?php if(isset($identity)){echo $identity;}?></h2>
+                <h2 id="identity"></h2>
             </div>
             <div class="scoreBar">
-                <div class="score" id="score">
-                    <?php if(isset($score)){echo $score;} ?>
-                </div>
+                <div class="score" id="score"></div>
                 <img src="Pics/coin.png" alt="MiniCoin">
             </div>
         </div>
@@ -30,7 +25,15 @@
     </header>
     <table class="activities">
         <thead>
-            <th colspan="3">Activities</th>
+            <th colspan="3">
+                <div class="actContainer">
+                <h3>Activities</h3>
+                <div class="cookieBar">
+                    <div class="cookies" id="cookies"></div>
+                    <img src="Pics/cookie.png" alt="MiniCookie">
+                </div>
+                </div>
+            </th>
         </thead>
         <tbody>
             <tr>
@@ -38,7 +41,7 @@
                     <h3>MiniQuiz(Cheat)</h3>
                     <p>Solve some questions to win coins!</p>
                 </td>
-                <td class="cost">Cost: 2<img src="Pics/coin.png" alt="MiniCoin" height="20px" width="20px"></td>
+                <td class="cost">Cost: 2<img src="Pics/cookie.png" alt="MiniCoin" height="20px" width="20px"></td>
                 <td class="Btn"><a href="MiniQuiz/MiniQuiz.php">Play</a></td>
             </tr>
             <tr>
@@ -46,7 +49,7 @@
                     <h3>MiniQuiz</h3>
                     <p>Solve some questions to win coins!</p>
                 </td>
-                <td class="cost">Cost: 2<img src="Pics/coin.png" alt="MiniCoin" height="20px" width="20px"></td>
+                <td class="cost">Cost: 2<img src="Pics/cookie.png" alt="MiniCoin" height="20px" width="20px"></td>
                 <td class="Btn">
                     <button id="MiniQuizPlayButton">Play</button>
                 </td>

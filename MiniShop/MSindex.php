@@ -1,3 +1,5 @@
+<?php include 'itemList.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,9 +31,9 @@
                 <img src="../Pics/cookie.png" alt="MiniCookie">
             </div>
         </div>
-        <div class="message"><?php if(isset($message)){echo "$message";}?></div>
+        <div class="message"><?php if(isset($message)){echo $message;}?></div>
         <div class="itemsContainer">
-            <?php include 'itemList.php'; ?>
+            <?php if(isset($list)){echo $list;} ?>
         </div>
     </div>
     <script src="MSscript.js"></script>

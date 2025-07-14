@@ -236,7 +236,7 @@ body{
 }
 
 .homePage .activities{
-    margin: 150px auto 0;
+    margin: 250px auto 0;
     width: 80%;
     background-color: #F7F7F7;
     padding: 20px;
@@ -309,4 +309,36 @@ body{
     letter-spacing: 1.5px;
     color: #5bcace;
     border: 1px solid #5bcace;
+}
+
+.cookieBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e1e1e1;
+    border-radius: 20px;
+    width: 100px;
+    /*position: absolute;
+    right: 5px;
+    top: 5px;*/
+    padding: 5px;
+    margin-left: auto;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.cookieBar .cookies{
+    margin-left: 20px;
+    color: #000;
+}
+
+.cookieBar img{
+    height: 30px;
+    width: 30px;
+}
+
+.actContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

@@ -192,3 +192,10 @@ body{
     height: 20px;
     width: 20px;
 }
+
+.message{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgb(255, 0, 162);
+    text-align: center;
+}

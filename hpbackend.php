@@ -1,24 +1,10 @@
 <?php
     include 'connect.php';
     session_start();
- 
-    if(isset($_SESSION['email'])){
-        $email = $_SESSION['email'];
-        $query = mysqli_query($con, "SELECT * FROM `users` WHERE email = '$email'");                
-        while($row = mysqli_fetch_array($query)){
-        $identity = $row['firstname'].' '.$row['lastname'];
-        $score = $row['score'];
-        }
-    }else{
-        header("Location: error.php");
-    }
+    $email = $_SESSION['email'];
 
     if(isset($_POST['MQscore'])){
         $quizScore = intval($_POST['MQscore']);
-        $changeScore = mysqli_query($con, "UPDATE `users` SET score = score + $quizScore -2 WHERE email = '$email'");
-        $query = mysqli_query($con, "SELECT * FROM `users` WHERE email = '$email'");                
-        while($row = mysqli_fetch_array($query)){
-        $score = $row['score'];
-        }
+        $changeScore = mysqli_query($con, "UPDATE `users` SET score = score + $quizScore, cookies = cookies - 2 WHERE email = '$email'");
     }
 ?> 
