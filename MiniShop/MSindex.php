@@ -30,48 +30,7 @@
             </div>
         </div>
         <div class="itemsContainer">
-            <div class="item">
-                <img class="itemImg" src="foodPics/cookie.webp" alt="itemPic">
-                <h3 class="itemName">Cookie</h3>
-                <p class="cost">Cost: 2<img src="../Pics/coin.png" alt="MiniCoin"></p>
-                <p class="effect">Effect: 2<img src="../Pics/cookie.png" alt="MiniCookie"></p>
-                <button class="buyBtn">Buy</button>
-            </div>
-            <div class="item">
-                <img class="itemImg" src="foodPics/apple.webp" alt="itemPic">
-                <h3 class="itemName">Apple</h3>
-                <p class="cost">Cost: 3<img src="../Pics/coin.png" alt="MiniCoin"></p>
-                <p class="effect">Effect: 4<img src="../Pics/cookie.png" alt="MiniCookie"></p>
-                <button class="buyBtn">Buy</button>
-            </div>
-            <div class="item">
-                <img class="itemImg" src="foodPics/bread.webp" alt="itemPic">
-                <h3 class="itemName">Bread</h3>
-                <p class="cost">Cost: 4<img src="../Pics/coin.png" alt="MiniCoin"></p>
-                <p class="effect">Effect: 5<img src="../Pics/cookie.png" alt="MiniCookie"></p>
-                <button class="buyBtn">Buy</button>
-            </div>
-            <div class="item">
-                <img class="itemImg" src="foodPics/steak.webp" alt="itemPic">
-                <h3 class="itemName">Steak</h3>
-                <p class="cost">Cost: 6<img src="../Pics/coin.png" alt="MiniCoin"></p>
-                <p class="effect">Effect: 8<img src="../Pics/cookie.png" alt="MiniCookie"></p>
-                <button class="buyBtn">Buy</button>
-            </div>
-            <div class="item">
-                <img class="itemImg" src="foodPics/baked-potato.webp" alt="itemPic">
-                <h3 class="itemName">Baked Potato</h3>
-                <p class="cost">Cost: 4<img src="../Pics/coin.png" alt="MiniCoin"></p>
-                <p class="effect">Effect: 5<img src="../Pics/cookie.png" alt="MiniCookie"></p>
-                <button class="buyBtn">Buy</button>
-            </div>
-            <div class="item">
-                <img class="itemImg" src="foodPics/cooked-cod.webp" alt="itemPic">
-                <h3 class="itemName">Cooked Cod</h3>
-                <p class="cost">Cost: 4<img src="../Pics/coin.png" alt="MiniCoin"></p>
-                <p class="effect">Effect: 5<img src="../Pics/cookie.png" alt="MiniCookie"></p>
-                <button class="buyBtn">Buy</button>
-            </div>
+            <?php include 'itemList.php'; ?>
         </div>
     </div>
     <script src="MSscript.js"></script>

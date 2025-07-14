@@ -37,15 +37,4 @@
             ';
         }
     }
-
-    /*$get = mysqli_query($con, "SELECT image FROM food WHERE id = $id");
-    if (mysqli_num_rows($get) > 0) {
-        $row = mysqli_fetch_assoc($get);
-        $image = $row['image'];
-        $image_path = "../../MiniShop/foodPics/" . $image;
-
-        // Step 2: Delete the image file if it exists
-        if (file_exists($image_path)) {
-            unlink($image_path); // Delete image from folder
-        }*/
 ?>
