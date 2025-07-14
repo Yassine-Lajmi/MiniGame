@@ -6,6 +6,7 @@
 
 .sideBar{
     position: fixed;
+    z-index: 5;
     background: #40117b;
     width: 170px;
     height: 100vh;
@@ -79,11 +80,13 @@ img{
 }
 
 .body{
-    /*margin-left: 170px;*/
     padding: 20px;
-    background-image: url(Pics/hpbackground.jpg);
+    background-image: url(Pics/homepageBG2.jpg);
     background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover;
+    height: 70vh;
+    width: 100vw;
+    min-width: 1300px;
 }
 
 .body .logo{
@@ -102,18 +105,43 @@ img{
 }
 
 .body .intro{
-    margin-top: 90px;
     margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.body .intro h1{
+.body .intro .text h1{
     color: #F7F7F7;
     font-size: 60px;
 }
 
-.body .intro p{
+.body .intro .text p{
     color: #F7F7F7;
     font-size: 20px;
+}
+
+.deco1{
+    height: auto;
+    width: 400px;
+    margin-right: 100px;
+}
+
+.deco1 {
+    animation: slideIn 1s ease-out;
+    position: relative; /* Required for moving with top/left */
+}
+
+/* Animation keyframes */
+@keyframes slideIn {
+    from {
+        transform: translateX(100px); /* Start 100px to the right */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .body .activities{
@@ -130,44 +158,6 @@ img{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-/*
-.body .activities .container .card{
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    height: 250px;
-    text-align: end;
-    display: flex;
-    flex-direction: column;
-    /*justify-content: flex-end;
-    justify-content: flex-end;
-    text-align: left;
-    /*align-items: flex-start;
-    color: #F7F7F7;
-    text-decoration: none;
-}
-
-#MiniShop{
-    background-image: url("Pics/2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#MiniQuiz{
-    background-image: url("Pics/1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#MiniShop:hover{
-    background-size: scale();
-    transition: 0.3s;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}*/
 
 .card {
     position: relative;
@@ -205,11 +195,11 @@ img{
 
 /* Specific card images */
 #MiniShop::before {
-    background-image: url("Pics/2.jpg");
+    background-image: url("Pics/minishopCard.jpg");
 }
 
 #MiniQuiz::before {
-    background-image: url("Pics/1.jpg");
+    background-image: url("Pics/miniquizCard.jpg");
 }
 
 /* Optional: dark overlay for better text readability */

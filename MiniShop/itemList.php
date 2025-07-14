@@ -24,14 +24,11 @@
                     $newCookies = $buyerRow['cookies'] + $itemEffect; 
                     $change = mysqli_query($con, "UPDATE `users` SET score = '$newScore', cookies = '$newCookies' WHERE id = '$buyer'");
                     if($change){
-                        //echo'purchase made successfully!';
                         $message = "Purchase made successfully!";
                     }else{
-                        //echo'no purchase made!';
                         $message = "No Purchase Made!";
                     }
                 }else{
-                    //echo"You don't have enough coins!";
                     $message = "You don't have enough coins!";
                 }
             }else{
@@ -45,7 +42,6 @@
     $list = "";
     $get = mysqli_query($con, "SELECT * FROM `food`");
     if(mysqli_num_rows($get) == 0){
-        //echo '<div class="message">No Items yet</div>';
         $message = "No Items yet!";
     }else{
         while($row = mysqli_fetch_assoc($get)){

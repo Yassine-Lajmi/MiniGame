@@ -27,11 +27,6 @@ h1{
     padding-top: 50px;
 }
 
-/*img{
-    height: 70px;
-    width: 70px;
-}*/
-
 .MSHead .userInfo{
     display: flex;
     align-items: center;
@@ -82,7 +77,6 @@ button{
     background: #1d9242;
     color: rgb(196, 254, 154);
     font-size: 15px;
-    /*text-decoration: none;*/
     padding: .5em;
     font-weight: 600;
     margin: 0 50px 0 20px;
@@ -110,7 +104,6 @@ button:hover{
     font-weight: 600;
     margin: 0 50px 0 20px;
     text-align: center;
-    /*cursor: pointer;*/
 }
 
 .MSHead a:hover{
@@ -137,7 +130,6 @@ body{
     padding: .5em 1em;
     border-radius: 10px;
     margin-bottom: 10px;
-    /*position: relative;*/
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -150,9 +142,6 @@ body{
     background: #e1e1e1;
     border-radius: 20px;
     width: 100px;
-    /*position: absolute;
-    right: 5px;
-    top: 5px;*/
     padding: 5px;
 }
 

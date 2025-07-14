@@ -63,11 +63,6 @@ body{
 }
 
 .addForm .inputBox{
-    /*padding: 0 0.5em;
-    border: 1px solid #000;
-    /*font-size: 15px;
-    border-radius: 5px;
-    outline: none;*/
     position: relative;
     display: flex;
 }
@@ -117,7 +112,6 @@ body{
     text-align: center;
     font-size: 15px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    /*cursor: pointer;*/
 }
 
 .addForm .action button:hover, form .action a:hover{

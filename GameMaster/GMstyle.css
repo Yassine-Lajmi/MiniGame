@@ -114,7 +114,5 @@ header a:hover{
 
 .activity a img:hover{
     border: 1px solid #0c005b;
-    /*height: 60px;
-    width: 60px;*/
     transition: 0.3s;
 }
