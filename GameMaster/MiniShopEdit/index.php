@@ -16,7 +16,6 @@
             <h2 class="title">List of Items</h2>
             <a href="addItem.php"><img src="../Pics/addButton.png" alt="AddBtn" height="30px" width="30px"></a>
         </div>
-        <div class="message"><?php if(isset($message)){echo $message;} ?></div>
         <div class="itemsContainer">
             <!--<div class="item">
                 <img class="itemImg" src="../../Pics/cookie.png" alt="itemPic" height="30px" width="30px">

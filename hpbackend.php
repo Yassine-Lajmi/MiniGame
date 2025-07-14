@@ -13,8 +13,8 @@
         header("Location: error.php");
     }
 
-    if(isset($_POST['score'])){
-        $quizScore = intval($_POST['score']);
+    if(isset($_POST['MQscore'])){
+        $quizScore = intval($_POST['MQscore']);
         $changeScore = mysqli_query($con, "UPDATE `users` SET score = score + $quizScore -2 WHERE email = '$email'");
         $query = mysqli_query($con, "SELECT * FROM `users` WHERE email = '$email'");                
         while($row = mysqli_fetch_array($query)){

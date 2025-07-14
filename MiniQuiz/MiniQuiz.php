@@ -20,7 +20,7 @@
             <button id="nextButton" class="nextBtn">Next</button>
         </div>
         <form style="display: none;" id="scoreForm" action="../homepage.php" method="post">
-            <input type="hidden" name="score" id="scoreInput">
+            <input type="hidden" name="MQscore" id="scoreInput">
             <button>Back to Homepage</button>
         </form>
     </div>

@@ -29,6 +29,7 @@
                 <img src="../Pics/cookie.png" alt="MiniCookie">
             </div>
         </div>
+        <div class="message"><?php if(isset($message)){echo "$message";}?></div>
         <div class="itemsContainer">
             <?php include 'itemList.php'; ?>
         </div>
