@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+.sideBar{
+    position: fixed;
+    background: #40117b;
+    width: 170px;
+    height: 100vh;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.sideBar .profileSection{
+    padding-bottom: 50px;
+    border-bottom: 5px solid #290b4f;  
+}
+
+.sideBar .profileSection .identity{
+    text-align: center;
+    color: #f7f7f7;
+    text-transform: capitalize;
+}
+
+.sideBar .profileSection .identity img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.sideBar .profileSection .ressources .bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F7F7F7;
+    border-radius: 20px;
+    width: 100px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.sideBar .profileSection .ressources .bar .number{
+    margin-left: 10px;
+}
+
+.sideBar .profileSection .ressources .bar img{
+    height: 30px;
+    width: 30px;
+}
+
+.sideBar .action{
+    padding: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideBar .action a{
+    color: #F7F7F7;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.sideBar .action a:hover{
+    letter-spacing: 1px;
+    transition: 0.3s;
+    text-decoration: underline;
+    color: magenta;
+}
+
+img{
+    height: 20px;
+    width: 20px;
+}
+
+.body{
+    /*margin-left: 170px;*/
+    padding: 20px;
+    background-image: url(Pics/hpbackground.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.body .logo{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 300px;
+    color: #F7F7F7;
+}
+
+.body .logo img{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.body .intro{
+    margin-top: 90px;
+    margin-left: 200px;
+}
+
+.body .intro h1{
+    color: #F7F7F7;
+    font-size: 60px;
+}
+
+.body .intro p{
+    color: #F7F7F7;
+    font-size: 20px;
+}
+
+.body .activities{
+    margin-top: 70px;
+    margin-left: 200px;
+}
+
+.body .activities .title{
+    color: #F7F7F7;
+    font-size: 30px;
+}
+
+.body .activities .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+/*
+.body .activities .container .card{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 250px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-end;
+    justify-content: flex-end;
+    text-align: left;
+    /*align-items: flex-start;
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
+#MiniShop{
+    background-image: url("Pics/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#MiniQuiz{
+    background-image: url("Pics/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#MiniShop:hover{
+    background-size: scale();
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}*/
+
+.card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+    height: 250px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    z-index: 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease;
+    z-index: -1;
+}
+
+/* Zoom effect on hover */
+.card:hover::before {
+    transform: scale(1.5); /* zoom in */
+}
+
+/* Specific card images */
+#MiniShop::before {
+    background-image: url("Pics/2.jpg");
+}
+
+#MiniQuiz::before {
+    background-image: url("Pics/1.jpg");
+}
+
+/* Optional: dark overlay for better text readability */
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3); /* dark overlay */
+    z-index: -1;
+}
+
+.card:hover h3,
+.card:hover p,
+.card:hover .cost {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+body{
+    background: #f7f7f7;
+}
